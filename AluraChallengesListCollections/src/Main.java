@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -105,5 +105,13 @@ public class Main {
         }
 
         System.out.println("The account with greater amount is %d".formatted(greaterAmount.getNumber()));
+
+        List<Integer> integers = new ArrayList<>();
+        integers.add(12);
+        integers.add(5);
+        integers.add(20);
+        System.out.println("Before sort: " + integers);
+        Collections.sort(integers);
+        System.out.println("After sort: " + integers);
     }
 }
