@@ -17,9 +17,9 @@ public class Main {
         myDaugher.setName("Vitoria");
         myDaugher.setAge(1);
 
-        people.add(me);
-        people.add(myWife);
         people.add(myDaugher);
+        people.add(myWife);
+        people.add(me);
 
         System.out.println("List size: " + people.size());
         System.out.println("First person: " + people.getFirst());
@@ -113,5 +113,9 @@ public class Main {
         System.out.println("Before sort: " + integers);
         Collections.sort(integers);
         System.out.println("After sort: " + integers);
+
+        System.out.println("Before sort: " + people);
+        Collections.sort(people);
+        System.out.println("After sort: " + people);
     }
 }
