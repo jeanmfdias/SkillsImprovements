@@ -18,4 +18,19 @@ public class CoinGecko {
             System.out.println(e.getMessage());
         }
     }
+
+    public void getCoin(String coinId) {
+        String url = "https://api.coingecko.com/api/v3/coins/" + coinId.replace(" ", "");
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+        HttpResponse<String> response = null;
+
+        try {
+            response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            String json = response.body();
+            System.out.println(json);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
