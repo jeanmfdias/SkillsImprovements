@@ -9,6 +9,21 @@ public class GoogleBooks {
         this.find(url);
     }
 
+    public void findByAuthor(String author) {
+        String url = "https://www.googleapis.com/books/v1/volumes?q=in+author:" + author.replace(" ", "+");
+        this.find(url);
+    }
+
+    public void findBySubject(String subject) {
+        String url = "https://www.googleapis.com/books/v1/volumes?q=subject:" + subject.replace(" ", "+");
+        this.find(url);
+    }
+
+    public void findByIsbn(int isbn) {
+        String url = "https://www.googleapis.com/books/v1/volumes?q=isbn:" + isbn;
+        this.find(url);
+    }
+
     private void find(String url) {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
