@@ -6,5 +6,8 @@ public class Main {
 
         TheMealDb theMealDb = new TheMealDb();
         theMealDb.getReceipt("pizza");
+
+        GoogleBooks googleBooks = new GoogleBooks();
+        googleBooks.findByName("clean code");
     }
 }
