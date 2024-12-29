@@ -3,5 +3,8 @@ public class Main {
         CoinGecko coinGecko = new CoinGecko();
         coinGecko.listCoins();
         coinGecko.getCoin("bitcoin");
+
+        TheMealDb theMealDb = new TheMealDb();
+        theMealDb.getReceipt("pizza");
     }
 }
