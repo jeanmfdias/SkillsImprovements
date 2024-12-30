@@ -1,6 +1,9 @@
 import com.google.gson.Gson;
+import exceptions.InvalidPasswordException;
 import models.Coin;
 import models.Recipes;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +25,18 @@ public class Main {
         System.out.println(coinJson);
         Coin coin = gson.fromJson(coinJson, Coin.class);
         System.out.println(coin);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Type your password: ");
+        scanner.reset();
+        String password = scanner.nextLine();
+
+        try {
+            if (password.length() < 8) {
+                throw new InvalidPasswordException("Password smaller then 8 character");
+            }
+        } catch (InvalidPasswordException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
