@@ -1,13 +1,21 @@
+import com.google.gson.Gson;
+import models.Recipes;
+
 public class Main {
     public static void main(String[] args) {
         CoinGecko coinGecko = new CoinGecko();
-        coinGecko.listCoins();
-        coinGecko.getCoin("bitcoin");
+        String coins = coinGecko.listCoins();
+        String coin = coinGecko.getCoin("bitcoin");
 
         TheMealDb theMealDb = new TheMealDb();
-        theMealDb.getReceipt("pizza");
+        String receiptJson = theMealDb.getReceipt("pizza");
 
         GoogleBooks googleBooks = new GoogleBooks();
-        googleBooks.findByName("clean code");
+        String books = googleBooks.findByName("clean code");
+
+        Gson gson = new Gson();
+        System.out.println(receiptJson);
+        Recipes meals = gson.fromJson(receiptJson, Recipes.class);
+        System.out.println(meals);
     }
 }
