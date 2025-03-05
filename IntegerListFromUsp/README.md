@@ -10,3 +10,4 @@
 6. Dados o número n de alunos de uma turma de Introdução aos Autômatos a Pilha (MAC 414) e suas notas da primeira prova, determinar a maior e a menor nota obtidas por essa turma (Nota máxima = 100 e nota mínima = 0).
 7. Dados n e uma seqüência de n números inteiros, determinar a soma dos números pares.
 8. Dado um inteiro não-negativo n, determinar n!
+9. Dados n e dois números inteiros positivos i e j diferentes de 0, imprimir em ordem crescente os n primeiros naturais que são múltiplos de i ou de j e ou de ambos.
