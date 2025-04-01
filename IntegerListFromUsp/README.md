@@ -12,3 +12,4 @@
 8. Dado um inteiro não-negativo n, determinar n!
 9. Dados n e dois números inteiros positivos i e j diferentes de 0, imprimir em ordem crescente os n primeiros naturais que são múltiplos de i ou de j e ou de ambos.
 10. Dizemos que um número natural é triangular se ele é produto de três números naturais consecutivos. Exemplo: 120 é triangular, pois 4.5.6 = 120. Dado um inteiro não-negativo n, verificar se n é triangular.
+11. Dado um inteiro positivo n, verificar se n é primo.
