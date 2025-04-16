@@ -16,3 +16,4 @@
 12. Dados dois números inteiros positivos, determinar o máximo divisor comum entre eles usando o algoritmo de Euclides.
 13. Dizemos que um inteiro positivo n é perfeito se for igual à soma de seus divisores positivos diferentes de n. Exemplo: 6 é perfeito, pois 1+2+3 = 6. Dado um inteiro positivo n, verificar se n é perfeito.
 14. Um matemático italiano da idade média conseguiu modelar o ritmo de crescimento da população de coelhos (1) através de uma seqüência de números naturais que passou a ser conhecida como seqüência de Fibonacci (2). O n-ésimo número da seqüência de Fibonacci Fn é dado pela seguinte fórmula de recorrência: Faça um programa que, dado n, calcula Fn.
+15. Dizemos que um número i é congruente módulo m a j se i % m = j % m. Exemplo: 35 é congruente módulo 4 a 39, pois 35 % 4 = 3 = 39 % 4. Dados inteiros positivos n, j e m, imprimir os n primeiros naturais congruentes a j módulo m.
