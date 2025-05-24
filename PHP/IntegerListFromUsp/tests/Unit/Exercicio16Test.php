@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use Jean\IntergerListFromUsp\Exercicio16;
+use Jean\IntegerListFromUsp\Exercicio16;
 
 class Exercicio16Test extends TestCase
 {

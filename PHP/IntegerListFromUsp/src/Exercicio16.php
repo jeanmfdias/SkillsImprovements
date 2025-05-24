@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Jean\IntergerListFromUsp;
+namespace Jean\IntegerListFromUsp;
 
 class Exercicio16
 {
-    public function coverterBinarioParaDecimal($binario): int
+    public function coverterBinarioParaDecimal(string $binario): int
     {
         $decimal = 0;
         $potencia = strlen($binario) - 1;
