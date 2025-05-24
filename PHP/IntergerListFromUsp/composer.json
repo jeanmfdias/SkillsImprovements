@@ -15,5 +15,10 @@
             "name": "Jean Dias"
         }
     ],
+    "scripts": {
+        "test": [
+            "phpunit --colors=always tests/"
+        ]
+    },
     "require": {}
 }
