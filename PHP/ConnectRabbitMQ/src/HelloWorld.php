@@ -4,12 +4,27 @@ declare(strict_types=1);
 
 namespace Jean\ConnectRabbitMq;
 
+use Dotenv\Dotenv;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 use Throwable;
 
 class HelloWorld
 {
+    private AMQPStreamConnection $connection;
+
+    public function __construct()
+    {
+        $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+        $dotenv->load();
+        $this->connection = new AMQPStreamConnection(
+            $_ENV['RABBITMQ_HOST'],
+            (int)$_ENV['RABBITMQ_PORT'],
+            $_ENV['RABBITMQ_USER'],
+            $_ENV['RABBITMQ_PASSWORD']
+        );
+    }
+
     public function hello(): string
     {
         return 'Hello World!';
@@ -17,8 +32,7 @@ class HelloWorld
 
     public function sendHello(): void
     {
-        $connection = new AMQPStreamConnection("localhost", 5672, "user", "password");
-        $channel = $connection->channel();
+        $channel = $this->connection->channel();
 
         $channel->queue_declare('hello', false, false, false, false);
 
@@ -27,13 +41,12 @@ class HelloWorld
         echo ' [x] Sent Hello World!' . PHP_EOL;
 
         $channel->close();
-        $connection->close();
+        $this->connection->close();
     }
 
     public function receiveHello(): void
     {
-        $connection = new AMQPStreamConnection("localhost", 5672, "user", "password");
-        $channel = $connection->channel();
+        $channel = $this->connection->channel();
         $channel->queue_declare('hello', false, false, false, false);
         echo ' [*] Waiting for messages. To exit press CTRL+C' . PHP_EOL;
         $callback = function ($msg) {
