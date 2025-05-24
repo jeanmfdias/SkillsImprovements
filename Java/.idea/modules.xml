@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AluraApiFilesErrors/AluraApiFilesErrors.iml" filepath="$PROJECT_DIR$/AluraApiFilesErrors/AluraApiFilesErrors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AluraChallengesFirstApp/AluraChallengesFirstApp.iml" filepath="$PROJECT_DIR$/AluraChallengesFirstApp/AluraChallengesFirstApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AluraChallengesListCollections/AluraChallengesListCollections.iml" filepath="$PROJECT_DIR$/AluraChallengesListCollections/AluraChallengesListCollections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AluraChallengesObjectOrientation/AluraChallengesObjectOrientation.iml" filepath="$PROJECT_DIR$/AluraChallengesObjectOrientation/AluraChallengesObjectOrientation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntegerListFromUsp/IntegerListFromUsp.iml" filepath="$PROJECT_DIR$/IntegerListFromUsp/IntegerListFromUsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecurityDevelopment/SecurityDevelopment.iml" filepath="$PROJECT_DIR$/SecurityDevelopment/SecurityDevelopment.iml" />
+    </modules>
+  </component>
+</project>
