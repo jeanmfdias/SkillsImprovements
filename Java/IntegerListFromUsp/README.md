@@ -1,6 +1,6 @@
 # Lista de Exercícios de Inteiros da USP
 
-[Link](https://www.ime.usp.br/~macmulti/exercicios/inteiros/index.html?utm_source=pocket_mylist)
+[Link](https://www.ime.usp.br/~macmulti/exercicios/inteiros/index.html)
 
 1. Dada uma seqüência de números inteiros não-nulos, seguida por 0, imprimir seus quadrados.
 2. Dado um número inteiro positivo n, calcular a soma dos n primeiros números inteiros positivos.
