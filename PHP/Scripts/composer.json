@@ -1,0 +1,17 @@
+{
+    "name": "jean/scripts",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jean\\Scripts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jeanmfdias",
+            "email": "jeanmfdias@gmail.com"
+        }
+    ],
+    "require": {}
+}
