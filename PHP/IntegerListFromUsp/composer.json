@@ -18,6 +18,9 @@
     "scripts": {
         "test": [
             "phpunit --colors=always tests/"
+        ],
+        "test-debug": [
+            "php -dxdebug.mode=debug ./vendor/bin/phpunit --colors=always --debug tests/"
         ]
     },
     "require": {}
