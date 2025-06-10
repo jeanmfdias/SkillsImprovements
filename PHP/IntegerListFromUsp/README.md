@@ -2,6 +2,8 @@
 
 [Link](https://www.ime.usp.br/~macmulti/exercicios/inteiros/index.html)
 
+All exercises were done with PHP 8.4
+
 16. Dado um número natural na base binária, transformá-lo para a base decimal.
 17. Dado um número natural na base decimal, transformá-lo para a base binária.
 18. Dados três números naturais, verificar se eles formam os lados de um triângulo retângulo.
@@ -26,3 +28,11 @@
     567765 e 32423 são palíndromos.
     567675 não é palíndromo.
     Dado um número natural   n > 10 , verificar se n é palíndrome.
+
+24. São dados dois números inteiros positivos p e q, sendo que o número de dígitos de p é menor ou igual ao número de dígitos de q. Verificar se p é um subnúmero de q.
+
+
+    Exemplos:
+    p = 23, q = 57238, p é subnúmero de q.
+    p = 23, q = 258347, p não é subnúmero de q.
+
