@@ -9,4 +9,4 @@ Studies in PHP, JavaScript and Java
 - [ ] Alura Challenges from Object Orientation in Java
 - [ ] Alura Challenges from List Collections in Java
 - [ ] Alura samples about Security Development in Java
-- [ ] Integer List from USP in Java and PHP
+- [x] Integer List from USP in Java and PHP
