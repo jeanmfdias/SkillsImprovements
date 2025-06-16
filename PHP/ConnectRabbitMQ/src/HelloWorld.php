@@ -36,7 +36,8 @@ class HelloWorld
 
         $channel->queue_declare('hello', false, false, false, false);
 
-        $msg = new AMQPMessage('Hello World!!!');
+        $date = date('Y-m-d H:i:s');
+        $msg = new AMQPMessage('Hello World!!! ' . $date);
         $channel->basic_publish($msg, '', 'hello');
         echo ' [x] Sent Hello World!' . PHP_EOL;
 
