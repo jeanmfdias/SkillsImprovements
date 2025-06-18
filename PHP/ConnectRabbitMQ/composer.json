@@ -1,5 +1,6 @@
 {
     "name": "jean/connect-rabbit-mq",
+    "description": "Project to execute a simple sample to PHP + RabbitMQ",
     "type": "project",
     "require": {
         "php-amqplib/php-amqplib": "^3.7",
