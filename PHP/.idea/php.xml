@@ -75,6 +75,7 @@
       <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpstan/phpstan" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.3">

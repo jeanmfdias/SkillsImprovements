@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/IntegerListFromUsp/src" isTestSource="false" packagePrefix="Jean\IntegerListFromUsp\" />
       <sourceFolder url="file://$MODULE_DIR$/IntegerListFromUsp/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Scripts/src" isTestSource="false" packagePrefix="Jean\Scripts\" />
+      <sourceFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/myclabs/deep-copy" />
@@ -70,6 +71,7 @@
       <excludeFolder url="file://$MODULE_DIR$/IntegerListFromUsp/vendor/staabm/side-effects-detector" />
       <excludeFolder url="file://$MODULE_DIR$/IntegerListFromUsp/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/phpstan/phpstan" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
