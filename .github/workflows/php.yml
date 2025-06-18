@@ -36,8 +36,5 @@ jobs:
       working-directory: ./PHP/ConnectRabbitMQ
 
     - name: Run PHPStan to ConnectRabbitMQ
-      uses: php-actions/phpstan@v3
-      with:
-        path: src/ tests/
-        php_version: '8.4'
-        vendored_phpstan_path: './PHP/ConnectRabbitMQ/vendor/bin/phpstan'
+      run: composer phpstan
+      working-directory: ./PHP/ConnectRabbitMQ
