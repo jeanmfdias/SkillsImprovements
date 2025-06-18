@@ -7,21 +7,16 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  ConnectRabbitMQ:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
 
-    - name: Change to PHP directory
-      run: cd ./PHP
-
-    - name: Change to Project ConnectRabbitMQ
-      run: cd ./ConnectRabbitMQ
-
-    - name: Validate composer.json and composer.lock
+    - name: Validate composer.json and composer.lock to ConnectRabbitMQ
       run: composer validate --strict
+      working-directory: ./PHP/ConnectRabbitMQ
 
     - name: Cache Composer packages
       id: composer-cache
@@ -32,11 +27,13 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
 
-    - name: Install dependencies
+    - name: Install dependencies to ConnectRabbitMQ
       run: composer install --prefer-dist --no-progress
+      working-directory: ./PHP/ConnectRabbitMQ
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
-    - name: Run test suite
+    - name: Run test suite to ConnectRabbitMQ
       run: composer test
+      working-directory: ./PHP/ConnectRabbitMQ
