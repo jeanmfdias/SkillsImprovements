@@ -40,4 +40,4 @@ jobs:
       with:
         path: src/ tests/
         php_version: '8.4'
-        phpstan_path: './PHP/ConnectRabbitMQ/vendor/bin/phpstan'
+        vendored_phpstan_path: './PHP/ConnectRabbitMQ/vendor/bin/phpstan'
