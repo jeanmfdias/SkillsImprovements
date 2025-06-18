@@ -4,4 +4,7 @@ lint:
 test:
 	docker compose exec -it app_send composer test
 
-ci: lint test
+start:
+	docker compose up -d
+
+ci: start lint test

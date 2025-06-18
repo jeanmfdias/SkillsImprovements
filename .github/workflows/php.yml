@@ -14,6 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Change to PHP directory
+      run: cd ./PHP
+
+    - name: Change to Project ConnectRabbitMQ
+      run: cd ./ConnectRabbitMQ
+
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
