@@ -36,5 +36,5 @@ jobs:
       working-directory: ./PHP/ConnectRabbitMQ
 
     - name: Run PHPStan to ConnectRabbitMQ
-      run: composer phpstan analyse src tests
+      run: composer phpstan
       working-directory: ./PHP/ConnectRabbitMQ
