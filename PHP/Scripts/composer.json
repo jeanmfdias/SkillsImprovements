@@ -1,17 +1,20 @@
 {
-    "name": "jean/scripts",
-    "type": "project",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Jean\\Scripts\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "jeanmfdias",
-            "email": "jeanmfdias@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "jean/scripts",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Jean\\Scripts\\": "src/",
+      "Tests": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "jeanmfdias",
+      "email": "jeanmfdias@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^12.3"
+  }
 }

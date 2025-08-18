@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/IntegerListFromUsp/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Scripts/src" isTestSource="false" packagePrefix="Jean\Scripts\" />
       <sourceFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Scripts/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Scripts/tests" isTestSource="false" packagePrefix="Tests" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/myclabs/deep-copy" />
@@ -72,6 +74,31 @@
       <excludeFolder url="file://$MODULE_DIR$/IntegerListFromUsp/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/staabm/side-effects-detector" />
+      <excludeFolder url="file://$MODULE_DIR$/Scripts/vendor/theseer/tokenizer" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

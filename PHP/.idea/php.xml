@@ -76,6 +76,31 @@
       <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/Scripts/vendor/theseer/tokenizer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.3">
@@ -88,6 +113,7 @@
     <phpunit_settings>
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/ConnectRabbitMQ/vendor/autoload.php" />
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/IntegerListFromUsp/vendor/autoload.php" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/Scripts/vendor/autoload.php" />
     </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
