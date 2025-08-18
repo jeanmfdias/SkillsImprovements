@@ -1,0 +1,38 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+  app_send:
+    build:
+      context: ./
+      dockerfile: ./infra/docker/php/Dockerfile
+    depends_on:
+      - rabbitmq
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: >
+      bash -c "while true; do php send.php; sleep 5; done"
+  app_receive:
+    build:
+      context: ./
+      dockerfile: ./infra/docker/php/Dockerfile
+    depends_on:
+      - rabbitmq
+      - app_send
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: >
+      bash -c "while true; do php receive.php; sleep 6; done"
+
+volumes:
+  rabbitmq_data:
+    driver: local

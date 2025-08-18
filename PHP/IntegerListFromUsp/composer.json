@@ -1,0 +1,27 @@
+{
+    "name": "jean/interger-list-from-usp",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^12.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jean\\IntegerListFromUsp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jean Dias"
+        }
+    ],
+    "scripts": {
+        "test": [
+            "phpunit --colors=always tests/"
+        ],
+        "test-debug": [
+            "php -dxdebug.mode=debug ./vendor/bin/phpunit --colors=always --debug tests/"
+        ]
+    },
+    "require": {}
+}

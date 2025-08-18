@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/Scripts/vendor/composer" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/composer" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/IntegerListFromUsp/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/composer" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/ConnectRabbitMQ/vendor/phpstan/phpstan" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.3">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/ConnectRabbitMQ/vendor/autoload.php" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/IntegerListFromUsp/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>
