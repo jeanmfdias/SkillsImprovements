@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/IntegerListFromUsp/src" isTestSource="false" packagePrefix="Jean\IntegerListFromUsp\" />
       <sourceFolder url="file://$MODULE_DIR$/IntegerListFromUsp/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Scripts/src" isTestSource="false" packagePrefix="Jean\Scripts\" />
-      <sourceFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Scripts/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Scripts/tests" isTestSource="false" packagePrefix="Tests" />
       <excludeFolder url="file://$MODULE_DIR$/ConnectRabbitMQ/vendor/composer" />
