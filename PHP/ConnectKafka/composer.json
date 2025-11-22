@@ -2,7 +2,8 @@
     "name": "jean/connect-kafka",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "12.4.x-dev"
+        "phpunit/phpunit": "12.4.x-dev",
+        "kwn/php-rdkafka-stubs": "dev-master"
     },
     "license": "MIT",
     "autoload": {
@@ -16,6 +17,5 @@
             "email": "jeanmfdias@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
 }
