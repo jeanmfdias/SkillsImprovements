@@ -9,5 +9,18 @@ int main() {
 
     int secretNumber = 0;
 
-    cout << "The secret number is " << secretNumber << endl; 
+    int shot;
+
+    cout << "What's your shot? ";
+    cin >> shot;
+
+    cout << "Your shot is: " << shot << endl;
+
+    if (secretNumber == shot) {
+        cout << "Congratulations! You guessed the number!" << endl;
+    } else if (secretNumber > shot) {
+        cout << "Your shot is less than secret number." << endl;
+    } else {
+        cout << "Your shot is greater than secret number." << endl;
+    }
 }
