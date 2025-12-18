@@ -12,11 +12,14 @@ int main()
 
     int shot;
 
+    int tries = 0;
+
     bool noGuessed = true;
 
     while (noGuessed)
     {
-
+        tries++;
+        cout << "Tries " << tries << endl;
         cout << "What's your shot? ";
         cin >> shot;
 
@@ -38,5 +41,14 @@ int main()
         {
             cout << "Your shot is greater than secret number." << endl;
         }
+
+        if (!guessed) {
+            cout << "--------------------------------" << endl;
+        }
     }
+
+    cout << "++++++++++++++++++++++++++++++++" << endl;
+    cout << "End game" << endl;
+    cout << "You guessed in " << tries << " tries." << endl;
+    cout << "++++++++++++++++++++++++++++++++" << endl;
 }
