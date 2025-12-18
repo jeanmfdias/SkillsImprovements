@@ -1,26 +1,42 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
     cout << "++++++++++++++++++++++++++++++++" << endl;
     cout << "+ Welcome to the Guessing Game +" << endl;
     cout << "++++++++++++++++++++++++++++++++" << endl;
 
-    int secretNumber = 0;
+    const int SECRET_NUMBER = 42;
 
     int shot;
 
-    cout << "What's your shot? ";
-    cin >> shot;
+    bool noGuessed = true;
 
-    cout << "Your shot is: " << shot << endl;
+    while (noGuessed)
+    {
 
-    if (secretNumber == shot) {
-        cout << "Congratulations! You guessed the number!" << endl;
-    } else if (secretNumber > shot) {
-        cout << "Your shot is less than secret number." << endl;
-    } else {
-        cout << "Your shot is greater than secret number." << endl;
+        cout << "What's your shot? ";
+        cin >> shot;
+
+        cout << "Your shot is: " << shot << endl;
+
+        bool guessed = SECRET_NUMBER == shot;
+        bool less = SECRET_NUMBER > shot;
+
+        if (guessed)
+        {
+            cout << "Congratulations! You guessed the number!" << endl;
+            noGuessed = false;
+        }
+        else if (less)
+        {
+            cout << "Your shot is less than secret number." << endl;
+        }
+        else
+        {
+            cout << "Your shot is greater than secret number." << endl;
+        }
     }
 }
