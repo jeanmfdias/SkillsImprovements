@@ -16,6 +16,8 @@ int main()
 
     bool noGuessed = true;
 
+    double points = 1000.0;
+
     while (noGuessed)
     {
         tries++;
@@ -24,6 +26,9 @@ int main()
         cin >> shot;
 
         cout << "Your shot is: " << shot << endl;
+
+        double lostPoints = abs(shot - SECRET_NUMBER) / 2.0;
+        points -= lostPoints;
 
         bool guessed = SECRET_NUMBER == shot;
         bool less = SECRET_NUMBER > shot;
@@ -50,5 +55,6 @@ int main()
     cout << "++++++++++++++++++++++++++++++++" << endl;
     cout << "End game" << endl;
     cout << "You guessed in " << tries << " tries." << endl;
+    cout << "You points is " << points << endl;
     cout << "++++++++++++++++++++++++++++++++" << endl;
 }
