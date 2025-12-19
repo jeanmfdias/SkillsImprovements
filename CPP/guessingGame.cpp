@@ -8,19 +8,37 @@ int main()
     cout << "+ Welcome to the Guessing Game +" << endl;
     cout << "++++++++++++++++++++++++++++++++" << endl;
 
+    cout << "Choose a level" << endl;
+    cout << "Easy (E) | Medium (M) | Hard (H)" << endl;
+
+    char level;
+
+    cin >> level;
+
+    int quantityTries;
+
+    switch (level)
+    {
+        case 'H':
+            quantityTries = 5;
+            break;
+        case 'M':
+            quantityTries = 10;
+            break;
+        default:
+            quantityTries = 15;
+    }
+
     const int SECRET_NUMBER = 42;
 
     int shot;
 
     int tries = 0;
 
-    bool noGuessed = true;
-
     double points = 1000.0;
 
-    while (noGuessed)
+    for (tries = 1; tries <= quantityTries; tries++)
     {
-        tries++;
         cout << "Tries " << tries << endl;
         cout << "What's your shot? ";
         cin >> shot;
@@ -36,7 +54,7 @@ int main()
         if (guessed)
         {
             cout << "Congratulations! You guessed the number!" << endl;
-            noGuessed = false;
+            break;
         }
         else if (less)
         {
