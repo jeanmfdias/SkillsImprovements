@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -29,7 +31,8 @@ int main()
             quantityTries = 15;
     }
 
-    const int SECRET_NUMBER = 42;
+    srand(time(NULL));
+    const int SECRET_NUMBER = rand() % 100;
 
     int shot;
 
