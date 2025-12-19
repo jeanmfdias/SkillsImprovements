@@ -55,6 +55,8 @@ int main()
     cout << "++++++++++++++++++++++++++++++++" << endl;
     cout << "End game" << endl;
     cout << "You guessed in " << tries << " tries." << endl;
+    cout.precision(2);
+    cout << fixed;
     cout << "You points is " << points << endl;
     cout << "++++++++++++++++++++++++++++++++" << endl;
 }
