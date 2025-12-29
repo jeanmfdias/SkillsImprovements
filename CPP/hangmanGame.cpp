@@ -5,9 +5,9 @@ using namespace std;
 
 string secretWord = "WATERMELON";
 
-bool wordIsPresent(char word) {
-    for (int i = 0; i < secretWord.size(); i++) {
-        if (secretWord[i] == word) {
+bool wordIsPresent(char shot) {
+    for (char letter : secretWord) {
+        if (letter == shot) {
             return true;
         }
     }
