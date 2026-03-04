@@ -8,4 +8,7 @@ $topic = $producer->createTopic('ConnectKafka');
 
 for ($i = 0; $i < 10; $i++) {
     $producer->createMessage($topic, 'Message' . $i);
+    echo "[Sent] Message" . $i . PHP_EOL;
 }
+
+$producer->flush();

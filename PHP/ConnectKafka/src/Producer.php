@@ -27,4 +27,9 @@ class Producer
         $topic->produce(RD_KAFKA_PARTITION_UA, 0, $payload);
         $this->producer->poll(0);
     }
+
+    public function flush(): void
+    {
+        $this->producer->flush(10000);
+    }
 }
