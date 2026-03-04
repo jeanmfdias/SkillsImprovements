@@ -5,9 +5,13 @@ RUN apt-get update \
         librdkafka-dev git \
     && pecl install rdkafka \
     && docker-php-ext-enable rdkafka \
+    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && ln -s $(composer config --global home) /root/composer
-ENV PATH=$PATH:/root/composer/vendor/bin COMPOSER_ALLOW_SUPERUSER=1
+ENV COMPOSER_ALLOW_SUPERUSER=1
+
+WORKDIR /app
+
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --no-interaction --prefer-dist
