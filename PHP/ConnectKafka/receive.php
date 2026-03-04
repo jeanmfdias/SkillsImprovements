@@ -4,7 +4,7 @@ require_once './vendor/autoload.php';
 
 $receive = new \Jean\ConnectKafka\Consumer();
 
-$receive->subscribe('ConnectKafka');
+$receive->subscribe('ConnectKafkaProject');
 
 while (true) {
     $receive->showMessage();
