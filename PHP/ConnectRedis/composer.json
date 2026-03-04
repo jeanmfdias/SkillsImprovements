@@ -1,0 +1,16 @@
+{
+    "name": "jean/connect-redis",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Jean\\ConnectRedis\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jeanmfdias",
+            "email": "jeanmfdias@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

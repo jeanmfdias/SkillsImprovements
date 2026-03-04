@@ -1,0 +1,46 @@
+services:
+  php_publisher:
+    build:
+      context: .
+      dockerfile: ./infra/docker/php/Dockerfile
+    working_dir: /app
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src
+      - ./send.php:/app/send.php
+    command: php send.php
+    networks:
+      - redisphp
+
+  php_subscriber:
+    build:
+      context: .
+      dockerfile: ./infra/docker/php/Dockerfile
+    working_dir: /app
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src
+      - ./receive.php:/app/receive.php
+    command: php receive.php
+    networks:
+      - redisphp
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - redisphp
+
+networks:
+  redisphp:
+    driver: bridge
