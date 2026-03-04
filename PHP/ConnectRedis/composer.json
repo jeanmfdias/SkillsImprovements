@@ -6,14 +6,20 @@
             "Jean\\ConnectRedis\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Jean\\ConnectRedis\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "jetbrains/phpstorm-stubs": "*",
+        "phpunit/phpunit": "^12.0"
+    },
     "authors": [
         {
             "name": "jeanmfdias",
             "email": "jeanmfdias@gmail.com"
         }
     ],
-    "require-dev": {
-        "jetbrains/phpstorm-stubs": "*"
-    },
     "minimum-stability": "dev"
 }

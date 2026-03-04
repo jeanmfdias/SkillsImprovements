@@ -29,6 +29,17 @@ services:
     networks:
       - redisphp
 
+  php_test:
+    build:
+      context: .
+      dockerfile: ./infra/docker/php/Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: sh -c "composer install --no-interaction && vendor/bin/phpunit"
+    networks:
+      - redisphp
+
   redis:
     image: redis:7-alpine
     ports:

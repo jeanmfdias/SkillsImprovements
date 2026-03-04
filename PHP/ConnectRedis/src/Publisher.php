@@ -6,8 +6,13 @@ class Publisher
 {
     protected \Redis $redis;
 
-    public function __construct()
+    public function __construct(?\Redis $redis = null)
     {
+        if ($redis !== null) {
+            $this->redis = $redis;
+            return;
+        }
+
         $this->redis = new \Redis();
         $this->redis->connect('redis', 6379);
     }
