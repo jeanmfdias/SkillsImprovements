@@ -12,5 +12,8 @@
             "email": "jeanmfdias@gmail.com"
         }
     ],
+    "require-dev": {
+        "jetbrains/phpstorm-stubs": "*"
+    },
     "minimum-stability": "dev"
 }
