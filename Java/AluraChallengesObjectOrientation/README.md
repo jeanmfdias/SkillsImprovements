@@ -9,11 +9,12 @@ Course exercises practicing OO concepts: classes, inheritance, polymorphism, int
 - [Saleable.java](src/Saleable.java), [Calculable.java](src/Calculable.java) — interfaces implemented by [Book.java](src/Book.java), [Product.java](src/Product.java), [GeometricCalc.java](src/GeometricCalc.java)
 - [PrimeNumber.java](src/PrimeNumber.java), [PrimeVerificator.java](src/PrimeVerificator.java), [PrimeGenerator.java](src/PrimeGenerator.java), [Calculator.java](src/Calculator.java), [MultiplicationTable.java](src/MultiplicationTable.java) — algorithms
 
-### Recent challenges (21–23)
+### Recent challenges (21–24)
 
 - 21 — GitHub user lookup: [GitHubUserSearch.java](src/GitHubUserSearch.java) calls `https://api.github.com/users/<username>` with `java.net.http.HttpClient`; throws [ErroConsultaGitHubException.java](src/ErroConsultaGitHubException.java) on 404 and the `catch` block prints a friendly message.
 - 22 — Write a message to `arquivo.txt` using `java.io` ([FileWriterChallenge.java](src/FileWriterChallenge.java)). The generated file is gitignored.
 - 23 — Serialize a [Titulo.java](src/Titulo.java) instance to JSON with Gson.
+- 24 — Serialize a [Veiculo.java](src/Veiculo.java) instance to JSON with Gson.
 
 ## Dependencies
 
