@@ -158,5 +158,9 @@ public class Main {
                 System.out.println("Ops! " + e.getMessage());
             }
         }
+
+        // Challenge 22
+        FileWriterChallenge fileWriterChallenge = new FileWriterChallenge();
+        fileWriterChallenge.writeMessage("arquivo.txt", "Conteúdo a ser gravado no arquivo.");
     }
 }
