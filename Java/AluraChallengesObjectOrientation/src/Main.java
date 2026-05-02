@@ -170,5 +170,9 @@ public class Main {
         Titulo titulo = new Titulo("O Senhor dos Anéis", "J.R.R. Tolkien", 1954, 9.5);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         System.out.println(gson.toJson(titulo));
+
+        // Challenge 24
+        Veiculo veiculo = new Veiculo("Jeep", "Compass", 2017, "White", 95000.00);
+        System.out.println(gson.toJson(veiculo));
     }
 }
