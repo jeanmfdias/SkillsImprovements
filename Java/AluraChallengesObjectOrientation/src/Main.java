@@ -1,3 +1,6 @@
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.util.Random;
 
 public class Main {
@@ -162,5 +165,10 @@ public class Main {
         // Challenge 22
         FileWriterChallenge fileWriterChallenge = new FileWriterChallenge();
         fileWriterChallenge.writeMessage("arquivo.txt", "Conteúdo a ser gravado no arquivo.");
+
+        // Challenge 23
+        Titulo titulo = new Titulo("O Senhor dos Anéis", "J.R.R. Tolkien", 1954, 9.5);
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        System.out.println(gson.toJson(titulo));
     }
 }
