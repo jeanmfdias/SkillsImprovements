@@ -146,5 +146,17 @@ public class Main {
         System.out.println("10 books sell by R$ %.2f".formatted(book.finalPrice(10)));
         System.out.println("10 Rog Strix sell by R$ %.2f".formatted(rogStrix.finalPrice(10)));
         System.out.println("11 Rog Strix sell by R$ %.2f - with promo".formatted(rogStrix.finalPrice(11)));
+
+        // Challenge 21
+        GitHubUserSearch gitHubUserSearch = new GitHubUserSearch();
+        String[] usernames = {"jeanmfdias", "this-user-definitely-does-not-exist-123456789"};
+        for (String username : usernames) {
+            try {
+                GitHubUser user = gitHubUserSearch.search(username);
+                user.details();
+            } catch (ErroConsultaGitHubException e) {
+                System.out.println("Ops! " + e.getMessage());
+            }
+        }
     }
 }
